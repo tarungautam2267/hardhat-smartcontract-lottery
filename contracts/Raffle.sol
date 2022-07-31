@@ -123,8 +123,6 @@ contract Raffle is VRFConsumerBaseV2, KeeperCompatibleInterface {
         emit WinnerPicked(recentWinner);
     }
 
-    /** Getter Functions */
-
     function getRaffleState() public view returns (RaffleState) {
         return s_raffleState;
     }
